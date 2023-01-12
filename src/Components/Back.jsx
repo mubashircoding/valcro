@@ -1,5 +1,5 @@
 import React from "react";
-import Img from '../1Background.svg'
+import Img from '../assets/1Background.svg'
 const Back = () => {
   return (
     <div className="fixed bg-black w-full h-full -z-10">
