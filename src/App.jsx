@@ -1,10 +1,13 @@
 import Back from "./Components/Back";
 import Button from "./Components/Nan";
+import Img from './assets/assets/astro.svg'
 function App() {
   return (
     <div className="App">
-      <Back/>
-      <Button />
+      <Back imageUrl={Img} />
+        <Button/>
+
+     
     </div>
   );
 }

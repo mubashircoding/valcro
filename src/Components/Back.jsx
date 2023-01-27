@@ -1,11 +1,20 @@
 import React from "react";
-import Img from '../assets/1Background.svg'
-const Back = () => {
+
+const Back = ({imageUrl}) => {
   return (
-    <div className=" -z-10 fixed w-full h-full">
-      <img src={Img} alt="/" className="w-full h-full object-cover" />
-    </div>
+    <div style={{
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      width: '100vw',
+      height: '100vh',
+      backgroundImage: `url(${imageUrl})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      zIndex: -1
+    }} />
   );
-};
+}
+
 
 export default Back;
